@@ -1,0 +1,44 @@
+{
+  "name": "node-authentication",
+  "version": "1.0.0",
+  "description": "node-authentication",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js  --fix",
+    "seed": "node seed"
+  },
+  "keywords": [],
+  "author": "YOUB AYOUB",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.15.2",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "ejs": "~2.5.2",
+    "eslint": "^4.19.1",
+    "express": "~4.14.0",
+    "express-session": "~1.14.1",
+    "joi": "^13.3.0",
+    "method-override": "~2.3.6",
+    "mongoose": "~4.13.1",
+    "mongoose-seed": "^0.4.1",
+    "mongoose-seeder": "^1.2.1",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.17.4",
+    "passport": "~0.3.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "~1.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
